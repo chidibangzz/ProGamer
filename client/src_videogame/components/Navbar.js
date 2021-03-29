@@ -30,7 +30,7 @@ function Navbar() {
 
     return (
         <>
-            {/* <nav className='extra-navbar'>Free shipping on games over 35 dollars!!!!</nav> */}
+            <nav className='extra-navbar'>Free shipping on games over 35 dollars!!!!</nav>
             <nav className='navbar'>
                 <div className='navbar-container'>
                     <Link to='/' className='navbar-logo' onClick=

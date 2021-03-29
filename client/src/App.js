@@ -1,35 +1,29 @@
-import React from 'react';
-import Navbar from "./components/Navbar"
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import './App.css';
-import './css/App.css'
-import Home from './components/pages/Home'
-import Services from './components/pages/Services'
-import Products from './components/pages/Products'
-import SignUp from './components/pages/SignUp'
-import ImageSlider from "./components/Slider"
-
-
-
-
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Books from "./pages/Books";
+import Detail from "./pages/Detail";
+import NoMatch from "./pages/NoMatch";
+import Nav from "./components/Nav";
 
 function App() {
-
   return (
-    <>
-      <Router>
-        <Navbar />
-        
+    <Router>
+      <div>
+        <Nav />
         <Switch>
-          <Route path='/' exact component={Home} />
-          <Route path='/services' component={Services} />
-          <Route path='/products' component={Products} />
-          <Route path='/sign-up' component={SignUp} />
+          <Route exact path={["/", "/books"]}>
+            <Books />
+          </Route>
+          <Route exact path="/books/:id">
+            <Detail />
+          </Route>
+          <Route>
+            <NoMatch />
+          </Route>
         </Switch>
-      </Router>
-    </>
+      </div>
+    </Router>
   );
 }
 
 export default App;
-
