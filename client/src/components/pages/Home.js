@@ -11,9 +11,10 @@ function Home () {
         <div className="container mt-5 carousel">
           <h1 className="slider_title">Hottest Games Out!!!</h1>
           <ImageSlider />
+          
         </div>
-        
         <Footer />
+        
         </>
     )
 }

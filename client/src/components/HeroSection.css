@@ -1,5 +1,5 @@
 
-video {
+/* video {
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -7,10 +7,10 @@ video {
     z-index: -1
 }
 
-.hero-container {
+.hero-container { */
     /* background: url('images/img-home.jpg') 
     center center/cover no-repeat; */
-    height: 100vh;
+    /* height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -77,4 +77,4 @@ video {
 
 
 
-/* // Slide show*/
+// Slide show */
