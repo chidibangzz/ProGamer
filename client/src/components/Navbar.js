@@ -40,11 +40,6 @@ function Navbar(props) {
                     </Link>
      
 
-      <li className='nav-item'>
-          
-          <SearchForm/>  
-         
-      </li>
 
                     <div className='menu-icon' onClick={handleClick}>
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
