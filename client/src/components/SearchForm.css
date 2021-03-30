@@ -1,18 +1,18 @@
 
-
 .form-group {
     display: flex;
-    padding: 0.5rem 1rem 10rem;
-    
-}
-
-.btn {
-    flex-direction: row;
-}
-
-.btn {
+    padding: 1.0rem, 1rem, 16rem, 15rem;
     text-decoration: none;
-    
-    margin-left: 1px;
-  }
   
+    
+}
+
+.fa-search {
+    flex-direction: row;
+    text-decoration: none;
+    padding: 1.0rem 4rem, 16rem, 15rem;
+   
+}
+.btn{
+    align-items: center;
+}

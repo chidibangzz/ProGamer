@@ -8,8 +8,7 @@ import Services from './components/pages/Services'
 import Products from './components/pages/Products'
 import SignUp from './components/pages/SignUp'
 import ImageSlider from "./components/Slider"
-
-
+import SearchForm from "./components/SearchForm"
 
 
 
@@ -19,6 +18,9 @@ function App() {
     <>
       <Router>
         <Navbar />
+        <li className='form-group'>
+          <SearchForm/>   
+      </li>
         <Switch>
           <Route path='/' exact component={Home} />
           <Route path='/services' component={Services} />
