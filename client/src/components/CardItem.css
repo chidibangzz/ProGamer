@@ -1,6 +1,6 @@
 .cards {
     padding: 4rem;
-    background: none;
+    background: white;
   }
   
   h1 {
@@ -8,12 +8,13 @@
   }
   
   .cards__container {
-    display: flex;
-    flex-flow: column;
+   
+    flex-flow: row;
     align-items: center;
-    max-width: 1120px;
+    max-width: 100%;
     width: 90%;
     margin: 0 auto;
+    
   }
   
   .cards__wrapper {
@@ -27,7 +28,7 @@
   
   .cards__item {
     display: flex;
-    flex: 1;
+  
     margin: 0 1rem;
     border-radius: 10px;
   }
@@ -42,11 +43,12 @@
     border-radius: 10px;
     overflow: hidden;
     text-decoration: none;
+    
   }
   
   .cards__item__pic-wrap {
     position: relative;
-    width: 100%;
+    width: 80%;
     padding-top: 67%;
     overflow: hidden;
   }
@@ -60,7 +62,7 @@
 
   .cards__item__pic-wrap::after {
     content: attr(data-category);
-    position: absolute;
+    position: relative;
     bottom: 0;
     margin-left: 10px;
     padding: 6px 8px;
@@ -70,6 +72,7 @@
     color: #fff;
     background-color: #1f98f4;
     box-sizing: border-box;
+    
   }
   
   .cards__item__img {

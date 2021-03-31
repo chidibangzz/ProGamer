@@ -24,7 +24,7 @@ function SearchForm(props) {
           id="search"
         />
         <br />
-        <button i className="fas fa-search" onClick={handleClick} >
+        <button  className="btn=" i className="fas fa-search" onClick={handleClick} >
      
         </button>
       </div>
