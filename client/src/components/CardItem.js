@@ -3,11 +3,17 @@ import React from 'react'
 import './CardItem.css'
 
 function CardItem(props) {
+
+    // const rows = [...Array( Math.ceil(props.displayGames.length / 4) )];
+    // const productRows = rows.map( (row, idx) => props.displayGames.slice(idx * 4, idx * 4 + 4) );
+
+
+
     return (
         <>
-            <li className="cards__item">
+            <li className="cards__item row">
                 {props.displayGames.map(games =>(
-                   <Link className="cards__item__link" to={games.path} key={games.id}>
+                   <Link className="cards__item__link col-md-3 mt-3 col-sm-12 px-3"  to={games.path} key={games.id}>
                    <figure className="cards__item__pic-wrap" data-category
                    ={games.label}
                    >
