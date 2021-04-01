@@ -5,6 +5,7 @@ import CardItem from "../CardItem"
 
 
 export default function Products() {
+    
 
     const videoGames = [
         {
@@ -152,7 +153,7 @@ export default function Products() {
             <h1>Look what we have in store!</h1>
             <div className="cards__container">
                 <div className="cards__wrapper">
-                    <ul className="cards__items">
+                    <ul className="cards__items-container">
                     <CardItem displayGames={videoGames}/>
                     </ul>
 
