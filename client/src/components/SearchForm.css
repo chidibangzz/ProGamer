@@ -1,0 +1,27 @@
+
+@media screen and (max-width: 604px) {
+    .form-group {
+        display: flex;
+        padding: 1.0rem, 1rem, 16rem, 15rem;
+        text-decoration: none;
+        margin-left: 30px;
+        
+    }
+
+}
+  
+.form-group {
+        display: flex;
+        padding: 1.0rem, 1rem, 16rem, 15rem;
+        text-decoration: none;
+        margin-left: 77px;
+    }
+.fa-search {
+    flex-direction: row;
+    text-decoration: none;
+
+   
+}
+.btn{
+    align-items: center;
+}
