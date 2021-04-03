@@ -5,7 +5,7 @@ const BASEURL = "https://rawg-video-games-database.p.rapidapi.com/games"
 const KEY = "30de55f9a4mshf984d53ea08b7a7p1e945fjsnab7068fa0cce"
 
 
-// Export an object containing methods we'll use for accessing the Dog.Ceo API
+// Export an object containing methods we'll use for accessing the rawg API
 
 
 const options = {
