@@ -1,6 +1,7 @@
 const axios = require("axios") ;
 function API() {
 
+const { render } = require("react-dom");
 
 const options = {
   method: 'GET',
