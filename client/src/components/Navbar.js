@@ -28,7 +28,7 @@ function Navbar(props) {
     }, []);
 
     window.addEventListener('resize', showButton)
-
+//
     return (
         <>
             <nav className='extra-navbar'>Free shipping on games over 35 dollars!!!!</nav>
