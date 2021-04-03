@@ -8,7 +8,7 @@ function Footer() {
         <div className='footer-container'>
             <section className='footer-subscription'>
                 <p className='footer-subscription-heading'>
-                    Join our gaming newsletter to see the latest content
+                    Join our Gaming newsletter to see the latest content
         </p>
                 <p className='footer-subscription-text'>
                     You can unsubscribe at any time.
@@ -64,10 +64,10 @@ function Footer() {
                 <div className='social-media-wrap'>
                     <div className='footer-logo'>
                         <Link to='/' className='social-logo'>
-                            TRVL <i className='fab fa-typo3' />
+                            ProGaMeRs <i className='fab fa-typo3' />
                         </Link>
                     </div>
-                    <small className='website-rights'>TRVL © 2020</small>
+                    <small className='website-rights'>PrOgAmErS © 2020</small>
                     <div className='social-icons'>
                         <Link
                             className='social-icon-link facebook'
