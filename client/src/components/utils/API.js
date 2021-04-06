@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASEURL = "https://rawg-video-games-database.p.rapidapi.com/games"
+const BASEURL = "https://api.rawg.io/api/platforms?"
 
 const KEY = "30de55f9a4mshf984d53ea08b7a7p1e945fjsnab7068fa0cce"
 
@@ -18,16 +18,30 @@ const options = {
 };
 
 
+
 export default {
-  getVideoGames: async function() {
-   return axios.request(options).then(function (response) {
+  getVideoGames: function() {
+    return axios.get("/api/videoGames");
+  }
+};
+
+
+
+
+
+
+
+
+// export default {
+//   getVideoGames: async function() {
+//    return axios.request(options).then(function (response) {
     
-	console.log(response.data);
-}).catch(function (error) {
-	console.error(error);
-});
+// 	console.log(response.data);
+// }).catch(function (error) {
+// 	console.error(error);
+// });
      
     
     
-  }
-};
+//   }
+// };

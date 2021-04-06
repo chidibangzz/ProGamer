@@ -48,7 +48,7 @@ export default function UpcomingVideoGames() {
             <h1>Upcoming Realeases!</h1>
             <div className="cards__container">
                 <div className="cards__wrapper">
-                    <ul className="cards__items-container" col px-md-5 p-3>
+                    <ul className="cards__items-container col px-md-5 p-3">
                     <CardItem displayGames={videoGames}/>
                     </ul>
 
