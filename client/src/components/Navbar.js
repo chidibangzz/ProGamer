@@ -28,7 +28,7 @@ function Navbar(props) {
     }, []);
 
     window.addEventListener('resize', showButton)
-
+//
     return (
         <>
             <nav className='extra-navbar'>Free shipping on games over 35 dollars!!!!</nav>
@@ -36,7 +36,9 @@ function Navbar(props) {
                 <div className='navbar-container'>
                     <Link to='/' className='navbar-logo' onClick=
                         {closeMobileMenu}>
+
                         ProGamer <i className='fas fa-gamepad' />
+
                     </Link>
      
 

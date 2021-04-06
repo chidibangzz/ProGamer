@@ -17,15 +17,15 @@ function SearchForm(props) {
         <input
         //   onChange={props.handleInputChange}
         //   value={props.value}
-          name="search"
+          className="search"
           type="text"
           className="form-control"
           placeholder="Search for Game"
           id="search"
         />
         <br />
-        <button  className="btn=" i className="fas fa-search" onClick={handleClick} >
-     
+        <button className="btn=" i className="fas fa-search" onClick={handleClick} >
+    
         </button>
       </div>
     </form>

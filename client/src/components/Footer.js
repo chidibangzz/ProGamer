@@ -8,7 +8,7 @@ function Footer() {
         <div className='footer-container'>
             <section className='footer-subscription'>
                 <p className='footer-subscription-heading'>
-                    Join our gaming newsletter to see the latest content
+                    Join our Gaming newsletter to see the latest content
         </p>
                 <p className='footer-subscription-text'>
                     You can unsubscribe at any time.
@@ -17,7 +17,7 @@ function Footer() {
                     <form>
                         <input
                             className='footer-input'
-                            name='email'
+                            className='email'
                             type='email'
                             placeholder='Your Email'
                         />
@@ -44,14 +44,14 @@ function Footer() {
                     </div>
                 </div>
                 <div className='footer-link-wrapper'>
-                    <div class='footer-link-items'>
+                    <div className='footer-link-items'>
                         <h2>Videos</h2>
                         <Link to='/'>Submit Video</Link>
                         <Link to='/'>Ambassadors</Link>
                         <Link to='/'>Agency</Link>
                         <Link to='/'>Influencer</Link>
                     </div>
-                    <div class='footer-link-items'>
+                    <div className='footer-link-items'>
                         <h2>Social Media</h2>
                         <Link to='/'>Instagram</Link>
                         <Link to='/'>Facebook</Link>
@@ -64,10 +64,10 @@ function Footer() {
                 <div className='social-media-wrap'>
                     <div className='footer-logo'>
                         <Link to='/' className='social-logo'>
-                            TRVL <i className='fab fa-typo3' />
+                            ProGaMeRs <i className='fab fa-typo3' />
                         </Link>
                     </div>
-                    <small className='website-rights'>TRVL © 2020</small>
+                    <small className='website-rights'>PrOgAmErS © 2020</small>
                     <div className='social-icons'>
                         <Link
                             className='social-icon-link facebook'
