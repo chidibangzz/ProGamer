@@ -19,19 +19,19 @@ export default function SignIn () {
             </b></p>
             <div>
             <p><b>Login Here</b></p>
-            <label for="txt-email">Email Address</label>
+            <label htmlFor="txt-email">Email Address</label>
             <input type="text" id="txt-email" />
             <br/>
-            <label for="txt-password">Password</label>
+            <label htmlFor="txt-password">Password</label>
             <input type="password" name="txt-password" id="txt-password" />
             </div>
             <fieldset data-role="controlgroup">
                 <input type="checkbox" name="chck-rememberme" id="chck-rememberme" />
-                <label for="chck-rememberme">Remember Me</label>
+                <label htmlFor="chck-rememberme">Remember Me</label>
             </fieldset>
-            <a href="#dlg-invalid-credentials" data-rel="popup" data-transition="pop" data-position-to="window" id="btn-submit">Submit</a>
+            <a href="#dlg-invalid-credentials" id="btn-submit">Submit</a>
             <p><a href="begin-password-reset.html">Can't access your account?</a></p>
-            <div data-role="popup" id="dlg-invalid-credentials" data-dismissible="false">
+            <div id="dlg-invalid-credentials">
                 <div role="main">
                     <h3>Login Failed</h3>
                     <p>Did you enter the right credentials?</p>
