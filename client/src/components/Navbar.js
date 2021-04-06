@@ -36,7 +36,7 @@ function Navbar(props) {
                 <div className='navbar-container'>
                     <Link to='/' className='navbar-logo' onClick=
                         {closeMobileMenu}>
-                        ViDeOgAmEr <i className='fas fa-gamepad' />
+                        ProGamer <i className='fas fa-gamepad' />
                     </Link>
      
 
@@ -49,17 +49,17 @@ function Navbar(props) {
 
                         <li className='nav-item'>
                             <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
-                            Purchase games
+                            Purchase Games
                             </Link>
                         </li>
                         <li className='nav-item'>
                             <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
-                               Sign-up
+                               Sign-Up
                             </Link>
                         </li>
                         <li className='nav-item'>
                             <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
-                                Porfolio
+                                Wishlist
                             </Link>
                         </li>
                         <li className='nav-item'>
@@ -69,7 +69,7 @@ function Navbar(props) {
                         </li>
 
                     </ul>
-                    {button && <Button buttonStyle='btn--outline'>Search Games</
+                    {button && <Button buttonStyle='btn--outline'>Home</
                     Button>}
                 </div>
             </nav>
