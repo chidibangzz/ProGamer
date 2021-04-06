@@ -7,22 +7,22 @@ import '../../App.css'
 import CardItem from "../CardItem"
 import SearchForm from "../SearchForm"
 import API from '../utils/API'
-require('dotenv').config();
+
 // const { REACT_APP_API_KEY } = process.env;
 
 function Products() {
     const [videoGames, setVideGame] = useState([]);
      
     useEffect(() => {
-        loadVideogames()
+        // loadVideogames()
+    // run once only on page load and if you wanted to run mutlitple times you can pass in param function in arra
       }, [])
-      console.log(loadVideogames)
-      console.log(process.env);
+      console.log(process.env.REACT_APP_KEY);
 
     function loadVideogames() {
         API.getVideoGames()
           .then(res => 
-            setVideGame(res.data)
+            setVideGame(res.results)
           )
           .catch(err => console.log(err));
       };
