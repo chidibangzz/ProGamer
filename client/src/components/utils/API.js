@@ -1,21 +1,22 @@
 import axios from "axios";
 
-const BASEURL = "https://api.rawg.io/api/platforms?"
+const BASEURL = "https://rawg-video-games-database.p.rapidapi.com/games";
 
-const KEY = "30de55f9a4mshf984d53ea08b7a7p1e945fjsnab7068fa0cce"
+const KEY = process.env.REACT_APP_KEY;
 
 
 // Export an object containing methods we'll use for accessing the rawg API
 
 
 const options = {
-  method: 'GET',
+  
   url: BASEURL,
   headers: {
     'x-rapidapi-key': KEY,
     'x-rapidapi-host': 'rawg-video-games-database.p.rapidapi.com'
   }
 };
+
 
 
 
