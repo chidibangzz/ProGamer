@@ -36,7 +36,7 @@ function Navbar(props) {
                 <div className='navbar-container'>
                     <Link to='/' className='navbar-logo' onClick=
                         {closeMobileMenu}>
-                        PrOgAmErs <i className='fas fa-gamepad' />
+                        ProGamers <i className='fas fa-gamepad' />
                     </Link>
      
 

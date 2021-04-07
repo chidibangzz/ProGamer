@@ -24,14 +24,12 @@ import axios from "axios";
 
 
 export default {
-  getVideoGames: function() {
+  getFavoriteGames: function() {
     return axios.get("/api/videoGames")
   },
-  // getApi: function() {
-  //   return axios.get(BASEURL).then(response=>{
-  //     console.log(response.data.results)
-  //   })
-  // }
+  addVideoGame: function(addGame) {
+    return axios.post("/api/videoGames",addGame)
+  },
 };
 
 
