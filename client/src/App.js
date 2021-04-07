@@ -19,9 +19,9 @@ function App() {
     <>
       <Router>
         <Navbar />
-        <li className='form-group'>
+        
           <SearchForm/>   
-      </li>
+    
         <Switch>
           <Route path='/' exact component={Home} />
           <Route path='/services' component={Services} />

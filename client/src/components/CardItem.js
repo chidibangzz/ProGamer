@@ -28,7 +28,7 @@ function CardItem(props) {
                    <li className="logo" i className="fab fa-windows"></li>
                    
                    </ul>
-                   <h5 className="cards__item__text">{games.text}</h5>
+                   <h5 className="cards__item__text">{games.name}</h5>
                    
                    <h6 className="cards__item__text">{games.releaseDate}
                    <i className="fas fa-star">{games.rating}</i>

@@ -20,16 +20,16 @@
 // }, [])
 
 
-// // function loadVideogames() {
-// //     API.search()
-// //       .then(res => 
-// //         setVideGame(res.data)
-// //       )
-// //       .catch(err => console.log(err));
-// //   };
+// function loadVideogames() {
+//     API.search()
+//       .then(res => 
+//         setVideGame(res.data)
+//       )
+//       .catch(err => console.log(err));
+//   };
 
     
-//     return (
+    // return (
 
 
 //         <div className='cards'>
