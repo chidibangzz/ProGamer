@@ -1,9 +1,6 @@
-import React from "react";
-import env from "react-dotenv";
-
 import axios from "axios";
 
-const BASEURL = "https://api.rawg.io/api/platforms?";
+
 
 // Export an object containing methods we'll use for accessing the rawg API
 
@@ -28,9 +25,13 @@ const BASEURL = "https://api.rawg.io/api/platforms?";
 
 export default {
   getVideoGames: function() {
-    return axios.get("/api/videoGames/")
-    
-  }
+    return axios.get("/api/videoGames")
+  },
+  // getApi: function() {
+  //   return axios.get(BASEURL).then(response=>{
+  //     console.log(response.data.results)
+  //   })
+  // }
 };
 
 
