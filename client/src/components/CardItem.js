@@ -18,7 +18,7 @@ function CardItem(props) {
                             ={games.label}
                         >   
                             <img src={games.background_image}
-                                alt="Mario"
+                                alt=""
                                 className="cards__item__img"
                                 images={games.background_image}
                             />
