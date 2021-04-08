@@ -30,6 +30,8 @@ function CardItem(props) {
 
                             </ul>
                             <h5 className="cards__item__text">{games.name}</h5>
+                            <h6 className="cards__item__text">{games.released}</h6>
+
                             {/* {JSON.stringify(games)} */}
                             <h6 className="cards__item__text">{games.releaseDate}
                                 <i className="fas fa-star">{games.rating}</i>
