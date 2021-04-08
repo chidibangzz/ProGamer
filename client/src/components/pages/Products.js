@@ -10,12 +10,12 @@ import API from '../utils/API'
 import axios from "axios";
 
 // const { REACT_APP_API_KEY } = process.env;
-const BASEURL = `https://api.rawg.io/api/platforms?key=${process.env.REACT_APP_API_KEY}`;
+const BASEURL = `https://api.rawg.io/api/games?key=${process.env.REACT_APP_API_KEY}`;
 
 function Products() {
     const [videoGamesApi, setVideoGameApi] = useState([]);
     const [favoriteGames, setFavoriteGames] = useState([]);
-
+    
 
     useEffect(() => {
         loadVideogames()
@@ -27,6 +27,8 @@ function Products() {
     // run once only on page load and if you wanted to run mutlitple times you can pass in param function in arra
       }, [])
 
+
+      
 
     function loadVideogames() {
        axios.get(BASEURL)
