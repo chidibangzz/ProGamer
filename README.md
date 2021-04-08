@@ -32,7 +32,7 @@ Main Features:
 
 ## Demo
 
-[ProGamer Home Page](https://github.com/chidibangzz/Project_3/blob/master/ProGamer%20Demo.PNG)
+![ProGamer Home Page](https://github.com/chidibangzz/Project_3/blob/master/ProGamer%20Demo.PNG)
 
 ## Languages
 
