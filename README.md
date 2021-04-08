@@ -9,7 +9,7 @@ This application is intended to help gamers find their favorite games, save thei
 * [Links](#Links)
 * [Demo](#Demo)
 * [Languages](#Languages)
-* [Developer-Notes](#Developer-Notes)
+* [Development-Notes](#Development-Notes)
 * [Reference](#Reference)
 * [Credits](#Credits)
 * [Contributors](#Contributors)
@@ -42,7 +42,7 @@ Main Features:
 * [MongoDB](https://www.mongodb.com/)
 * [NodeJS](https://nodejs.dev/)
 
-## Developer-Notes
+## Development-Notes
 
 ## References
 
@@ -69,7 +69,6 @@ APIs Used:
 > Design Team
 * Chidi Ekeke
     
-        
 * Reina Rivera
     
 > Function Team
