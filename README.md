@@ -80,7 +80,7 @@ APIs Used:
 
 ## License
 
-MIT © [Chidi Ekeke](https://github.com/chidibangzz) [Reina Rivera](https://github.com/reinarivera16) [Joe Park](https://github.com/Ysdra) [Ryland Quirk(https://github.com/rylawesome) 
+MIT © [Chidi Ekeke](https://github.com/chidibangzz) [Reina Rivera](https://github.com/reinarivera16) [Joe Park](https://github.com/Ysdra) [Ryland Quirk](https://github.com/rylawesome) 
    
 
 
