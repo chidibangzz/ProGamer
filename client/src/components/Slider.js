@@ -19,7 +19,9 @@ function ImageSlider() {
             <div className="card-wrapper">
                 <div className="card">
                     <div className="card-image">
+                        <a href="https://www.back4blood.com/en-us">
                         <img src="/images/back_4_blood.jpeg" />
+                        </a>
                     </div>
                     <ul className="social-icons">
                         <li><a href="#"></a></li>
@@ -35,7 +37,9 @@ function ImageSlider() {
             <div className="card-wrapper">
                 <div className="card">
                     <div className="card-image">
+                        <a href="https://bethesda.net/en/game/deathloop">
                         <img src="/images/deathloop.jpeg" />
+                        </a>
                     </div>
                     <ul className="social-icons">
                         <li><a href="#"></a></li>
@@ -51,7 +55,9 @@ function ImageSlider() {
             <div className="card-wrapper">
                 <div className="card">
                     <div className="card-image">
+                        <a href="https://www.ubisoft.com/en-us/game/far-cry/far-cry-6">
                         <img src="/images/far_cry_6.png" />
+                        </a>
                     </div>
                     <ul className="social-icons">
                         <li><a href="#"></a></li>
@@ -67,7 +73,9 @@ function ImageSlider() {
             <div className="card-wrapper">
                 <div className="card">
                     <div className="card-image">
+                        <a href="https://www.halowaypoint.com/en-us/games/halo-infinite">
                         <img src="/images/halo_infinite.png" />
+                        </a>
                     </div>
                     <ul className="social-icons">
                         <li><a href="#"></a></li>
@@ -83,7 +91,9 @@ function ImageSlider() {
             <div className="card-wrapper">
                 <div className="card">
                     <div className="card-image">
+                    <a href="https://hitman.com/us/">
                         <img src="/images/hitman_3.jpeg" />
+                    </a>    
                     </div>
                     <ul className="social-icons">
                         <li><a href="#"></a></li>
@@ -99,7 +109,9 @@ function ImageSlider() {
             <div className="card-wrapper">
                 <div className="card">
                     <div className="card-image">
+                    <a href="https://www.playstation.com/en-us/games/horizon-forbidden-west/">
                         <img src="/images/horizon_forbidden_west.jpeg" />
+                    </a>    
                     </div>
                     <ul className="social-icons">
                         <li><a href="#"></a></li>
@@ -115,7 +127,9 @@ function ImageSlider() {
             <div className="card-wrapper">
                 <div className="card">
                     <div className="card-image">
+                    <a href="https://www.monsterhunter.com/rise/us/">
                         <img src="/images/monster_hunter_rise.jpeg" />
+                    </a>    
                     </div>
                     <ul className="social-icons">
                         <li><a href="#"></a></li>
@@ -131,7 +145,9 @@ function ImageSlider() {
             <div className="card-wrapper">
                 <div className="card">
                     <div className="card-image">
+                    <a href="https://outriders.square-enix-games.com/en-us/">
                         <img src="/images/outriders.jpeg" />
+                    </a>    
                     </div>
                     <ul className="social-icons">
                         <li><a href="#"></a></li>
@@ -147,7 +163,9 @@ function ImageSlider() {
             <div className="card-wrapper">
                 <div className="card">
                     <div className="card-image">
+                    <a href="https://insomniac.games/game/ratchet-clank-rift-apart/">
                         <img src="/images/ratchet_and_clank.png" />
+                    </a>    
                     </div>
                     <ul className="social-icons">
                         <li><a href="#"></a></li>
@@ -163,7 +181,9 @@ function ImageSlider() {
             <div className="card-wrapper">
                 <div className="card">
                     <div className="card-image">
+                    <a href="https://www.residentevil.com/village/us/">
                         <img src="/images/Resident_Evil_Village.png" />
+                    </a>    
                     </div>
                     <ul className="social-icons">
                         <li><a href="#"></a></li>
