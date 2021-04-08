@@ -30,7 +30,9 @@ Main Features:
 * Project Repo: [Repoistory](https://github.com/chidibangzz/Project_3)
 * Deployed Heroku Application: [Website](https://project-3-react.herokuapp.com/)
 
-## Demo 
+## Demo
+
+[ProGamer Home Page](https://github.com/chidibangzz/Project_3/blob/master/ProGamer%20Demo.PNG)
 
 ## Languages
 
