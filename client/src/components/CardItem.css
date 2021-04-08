@@ -13,8 +13,8 @@ h1 {
 
 /* red line in background */
 .cards__container {
-  display: grid;
-  grid-gap: 0 24px;
+  display: flex;
+  grid-gap: 0;
   /* display: flex;
   flex-flow: column;
   align-items: center;
