@@ -62,11 +62,6 @@ function Navbar(props) {
                                 Porfolio
                             </Link>
                         </li>
-                        <li className='nav-item'>
-                            <Link to='/sign-up' className='nav-links' onClick={closeMobileMenu}>
-                                Contact
-                            </Link>
-                        </li>
 
                     </ul>
                     {button && <Button buttonStyle='btn--outline'>Search Games</
