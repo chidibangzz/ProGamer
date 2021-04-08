@@ -14,26 +14,45 @@ export default function SignUp () {
                         Existing Users
                     </Link>
                 </b></p>
-                <label htmlFor="txt-first-name">Username</label>
-                <input type="text" name="txt-first-name" id="txt-first-name" />
+                <form>
+                    <label htmlFor="txt-first-name">Username</label>
+                    <input type="text" name="txt-first-name" id="txt-first-name" />
                 <br />
-                <label htmlFor="txt-email">Email Address</label>
-                <input type="text" name="txt-email" id="txt-email" />
+                    <label htmlFor="txt-email">Email Address</label>
+                    <input type="text" name="txt-email" id="txt-email" />
                 <br />
-                <label htmlFor="txt-password">Password</label>
-                <input type="text" name="txt-password" id="txt-password" />
+                    <label htmlFor="txt-password">Password</label>
+                    <input type="text" name="txt-password" id="txt-password" />
                 <br />
-                <label htmlFor="txt-password-confirm">Confirm Password</label>
-                <input type="text" name="txt-password-confirm" id="txt-password-confirm" />
+                    <label htmlFor="txt-password-confirm">Confirm Password</label>
+                    <input type="text" name="txt-password-confirm" id="txt-password-confirm" />
+                </form>
                 <br />
-                <a href="#dlg-sign-up-sent" id="btn-submit">Submit</a>
-                <div id="dlg-sign-up-sent">
-                    <h3>Account Created Successfully!</h3>
-                </div>
+                <input onClick={() => {submitForm(
+                    document.getElementById('txt-first-name').value,
+                    document.getElementById('txt-email').value,
+                    document.getElementById('txt-password').value,
+                    document.getElementById('txt-password-confirm').value)
+                }
+            }
+                    type="submit" name="submit" id="btn-submit"/>
             </div>
-        <div>
-        </div>
     </div>
     </>
-    )
+    );
+    function submitForm(username, email, password, passwordConfirm) {
+        var data = "email=" + email + "&username" + username + "&password=" + password + "&passwordConfirm" + passwordConfirm;
+        console.log(data);
+        //Check if PW & Confirm PW match
+        var passwordsMatch = function (password, passwordConfirm) {
+            return password === passwordConfirm;
+        };
+        //If they don't, return
+        if (!passwordsMatch(password, passwordConfirm)) {
+            //$ctnErr.html("<p>Your passwords don't match.</p>");
+            console.log("Passwords do not match")
+            return;
+        }
+        //else if 
+    };
 }
