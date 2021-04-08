@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const videoGameSchema = new Schema({
+  apiGameId: {type: String},
   text: { type: String  },
   rating: { type: String },
   releaseDate: {type: String},

@@ -7,24 +7,45 @@ import '../../App.css'
 import CardItem from "../CardItem"
 import SearchForm from "../SearchForm"
 import API from '../utils/API'
+import axios from "axios";
 
+// const { REACT_APP_API_KEY } = process.env;
+const BASEURL = `https://api.rawg.io/api/platforms?key=${process.env.REACT_APP_API_KEY}`;
 
 function Products() {
-    const [videoGames, setVideGame] = useState([]);
-     
+    const [videoGamesApi, setVideoGameApi] = useState([]);
+    const [favoriteGames, setFavoriteGames] = useState([]);
+
+
     useEffect(() => {
         loadVideogames()
+    // run once only on page load and if you wanted to run mutlitple times you can pass in param function in arra
       }, [])
-      console.log(loadVideogames)
-      const { REACT_APP_API_KEY } = process.env;
+      useEffect(() => {
+        getFavorites()
+        
+    // run once only on page load and if you wanted to run mutlitple times you can pass in param function in arra
+      }, [])
+
+
     function loadVideogames() {
-        API.getVideoGames()
-          .then(res => 
-            setVideGame(res.data)
-          )
+       axios.get(BASEURL)
+          .then(res => {
+            setVideoGameApi(res.data.results)
+            console.log(res.data.results)
+          })
           .catch(err => console.log(err));
       };
     
+      function getFavorites() {
+      API.getFavoriteGames()
+      .then(results => {
+            setFavoriteGames(results.data)
+          console.log("favorites")
+          console.log(results.data)});
+
+      }
+      
 
     const videoGamess = [
         {
@@ -167,11 +188,11 @@ function Products() {
 
         <div className='cards'> 
         
-            <h1>Look what games we have in store!</h1>
+            <h1> Check out games in store!</h1>
             <div className="cards__container">
                 <div className="cards__wrapper">
                     <ul className="cards__items-container">
-                    <CardItem displayGames={videoGamess}/>
+                    <CardItem favoriteGames={favoriteGames} displayGames={videoGamesApi}/>
                     </ul>
 
                 </div>

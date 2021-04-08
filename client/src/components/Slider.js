@@ -182,7 +182,3 @@ function ImageSlider() {
 
 export default ImageSlider
 
-//... is called spread operator
-
-//thanks for watching
-//pleae subscribe my channel
