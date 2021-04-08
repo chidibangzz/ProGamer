@@ -1,7 +1,7 @@
 # ProGamer
 
 ## Description
-This application is intended to help gamers find their favorite games, save their favorite games, and discover new and exciting games that are coming out.
+This React-based application is intended to help gamers find their favorite games, save their favorite games, and discover new and exciting games.
 
 ## Table of Contents
 
