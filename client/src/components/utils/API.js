@@ -1,33 +1,54 @@
 import axios from "axios";
 
-const BASEURL = "https://rawg-video-games-database.p.rapidapi.com/games"
-
-const KEY = "30de55f9a4mshf984d53ea08b7a7p1e945fjsnab7068fa0cce"
 
 
-// Export an object containing methods we'll use for accessing the Dog.Ceo API
+// Export an object containing methods we'll use for accessing the rawg API
 
 
-const options = {
-  method: 'GET',
-  url: BASEURL,
-  headers: {
-    'x-rapidapi-key': KEY,
-    'x-rapidapi-host': 'rawg-video-games-database.p.rapidapi.com'
-  }
-};
+// const options = {
+  
+//   url: BASEURL,
+//   headers: {
+//     'x-rapidapi-key': KEY,
+//     'x-rapidapi-host': 'rawg-video-games-database.p.rapidapi.com'
+//   }
+// };
+
+
+// export default function getVideoGamess() {
+//   return <div>{window.env.REACT_APP_KEY}</div>;
+// }
+// console.log(window.env.REACT_APP_KEY)
+
+
 
 
 export default {
-  getVideoGames: async function() {
-   return axios.request(options).then(function (response) {
+  getFavoriteGames: function() {
+    return axios.get("/api/videoGames")
+  },
+  addVideoGame: function(addGame) {
+    return axios.post("/api/videoGames",addGame)
+  },
+};
+
+
+
+
+
+
+
+
+// export default {
+//   getVideoGames: async function() {
+//    return axios.request(options).then(function (response) {
     
-	console.log(response.data);
-}).catch(function (error) {
-	console.error(error);
-});
+// 	console.log(response.data);
+// }).catch(function (error) {
+// 	console.error(error);
+// });
      
     
     
-  }
-};
+//   }
+// };
