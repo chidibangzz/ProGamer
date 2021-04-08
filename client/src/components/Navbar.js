@@ -55,18 +55,13 @@ function Navbar(props) {
                             </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
-                               Sign-Up
+                            <Link to='/sign-up' className='nav-links' onClick={closeMobileMenu}>
+                               Sign-up
                             </Link>
                         </li>
                         <li className='nav-item'>
                             <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
                                 Wishlist
-                            </Link>
-                        </li>
-                        <li className='nav-item'>
-                            <Link to='/sign-up' className='nav-links' onClick={closeMobileMenu}>
-                                Contact
                             </Link>
                         </li>
 
