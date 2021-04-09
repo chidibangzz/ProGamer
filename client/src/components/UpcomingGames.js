@@ -1,9 +1,9 @@
 import React from "react"
 import './UpcomingCard.css'
-import godOf from "/Users/chidibangzz/Project_3/client/src/images/godofwar.jpeg";
-import returnal from "/Users/chidibangzz/Project_3/client/src/images/returnal.jpeg";
-import balance from "/Users/chidibangzz/Project_3/client/src/images/balanwonderland.jpeg"
-import { div } from 'react-router-dom'
+import godOf from "../images/godofwar.jpeg";
+import returnal from "../images/returnal.jpeg";
+import balance from "../images/balanwonderland.jpeg"
+
 
 
 function UpcomingVideoGames() {
