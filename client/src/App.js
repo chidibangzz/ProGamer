@@ -10,6 +10,7 @@ import SignUp from './components/pages/SignUp'
 import SignIn from './components/pages/SignIn'
 import ImageSlider from "./components/Slider"
 import SearchForm from "./components/SearchForm"
+import CardItem from './components/CardItem';
 
 
 
@@ -28,6 +29,7 @@ function App() {
           <Route path='/products' component={Products} />
           <Route path='/sign-up' component={SignUp} />
           <Route path='/sign-in' component={SignIn} />
+          <Route path='./carditem' component={CardItem} />
         </Switch>
       </Router>
     </>

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import React from 'react'
 import './CardItem.css'
+import './SearchForm'
 
 function CardItem(props) {
 
