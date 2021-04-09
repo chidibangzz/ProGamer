@@ -50,14 +50,14 @@ Main Features:
 
 These are the websites we used as references: 
 
-> - [StackOverflow](https://www.stackoverflow.com/) || Most issues I had were resolved from looking at other people's problems.
+> - [StackOverflow](https://www.stackoverflow.com/) || Most issues we had were resolved from looking at other people's problems.
 > - [React Documentation](https://reactjs.org/docs/getting-started.html) || Used this to reference correct syntax usage and component structure.
 > - [RAWG API Documentation](https://api.rawg.io/docs/) || API documentation for the video game API we were calling.
 
 How to create a good README here: 
 
-> - [GitHub Docs](https://docs.github.com/en/free-pro-team@latest/github/writing-on-github/basic-writing-and-formatting-syntax) || Learn most of my README syntax here.
-> - [Akash Nimare](https://medium.com/@meakaakka/a-beginners-guide-to-writing-a-kickass-readme-7ac01da88ab3) || Based my README from his person.
+> - [GitHub Docs](https://docs.github.com/en/free-pro-team@latest/github/writing-on-github/basic-writing-and-formatting-syntax) || Learned most of my README syntax here.
+> - [Akash Nimare](https://medium.com/@meakaakka/a-beginners-guide-to-writing-a-kickass-readme-7ac01da88ab3) || Based my README from his guide.
 > - [Mark Down Guide](https://www.markdownguide.org/cheat-sheet/) || README Syntax
 
 ## Credits
