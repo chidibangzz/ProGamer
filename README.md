@@ -70,13 +70,33 @@ APIs Used:
 
 > Design Team
 * Chidi Ekeke
+   * 1
+   * 2
+   * 3
+   * 4
+   * 5
     
 * Reina Rivera
+   * 1
+   * 2
+   * 3
+   * 4
+   * 5
     
 > Function Team
 * Joe Park
+   * 1
+   * 2
+   * 3
+   * 4
+   * 5
    
 * Ryland Quirk
+   * 1
+   * 2
+   * 3
+   * 4
+   * 5
 
 ## License
 
