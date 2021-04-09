@@ -1,60 +1,156 @@
 import React from "react"
-import CardItem from "./CardItem"
-
-export default function UpcomingVideoGames() {
-    
-
-    const videoGames = [
-        {
-        id:1,
-        src:"images/god_of_war_ragnarok.jpeg",
-        text:"God of War: Ragnarok",
-        rating:"",
-        releaseDate:"Realease Date: 2021",
-        ratingNumber:"3566",
-        label:'Pgamer',
-        path:'/products'
-        },
-        {
-        id:2,
-        src:"images/balan_wonderland.jpeg",
-        text:"Balan Wonderland",
-        rating:"E10+",
-        releaseDate:"Realease Date: 2021",
-        ratingNumber:"3566",
-        label:'Square Enix',
-        path:'/products'
-        },
-        {
-        id:3,
-        src:"images/returnal.jpeg",
-        text:"Returnal",
-        rating:"",
-        releaseDate:"Realease Date: 2021",
-        ratingNumber:"3566",
-        label:'Housemarque',
-        path:'/products'
-        },
-        
-        
-    ];
+import './UpcomingCard.css'
+import godOf from "/Users/chidibangzz/Project_3/client/src/images/godofwar.jpeg";
+import returnal from "/Users/chidibangzz/Project_3/client/src/images/returnal.jpeg";
+import balance from "/Users/chidibangzz/Project_3/client/src/images/balanwonderland.jpeg"
+import { Link } from 'react-router-dom'
 
 
+function UpcomingVideoGames() {
 
+
+  
 
     return (
 
-        <div className='cards'>
-            <h1>Upcoming Releases!</h1>
-            <div className="cards__container">
-                <div className="cards__wrapper">
-                    <ul className="cards__items-container col px-md-5 p-3">
-                    <CardItem displayGames={videoGames}/>
-                    </ul>
 
+        <div className='cards'>
+
+            <h1>Upcoming Releases!</h1>
+            <div className="cards__containers">
+                <div className="cards__wrappers " >
+                    <ul className="cards__itemss">
+
+                        <>
+                            <li className="cards__items">
+
+                                <Link className="cards__item__links" >
+                                    <figure className="cards__item__pic-wraps"
+
+                                    >
+                                        <img src={godOf}
+                                            alt="Mario"
+                                            className="cards__item__img"
+                                            images={godOf}
+                                        />
+                                    </figure>
+                                    <div className="cards__item__info">
+                                        <ul className="logo" i className="fab fa-xbox">
+                                            <li className="logo" i className="fab fa-playstation"></li>
+                                            <li className="logo" i className="fab fa-windows"></li>
+
+                                        </ul>
+                                        <h5 className="cards__item__text"></h5>
+                                        <h6 className="cards__item__text">God Of War</h6>
+
+                                        {/* {JSON.stringify(games)} */}
+                                        <h6 className="cards__item__text">
+                                           
+                                        </h6>
+                                        <h6 className="cards__item__text">
+                                            <i className="fas fa-plus"></i>
+                                        </h6>
+
+                                    </div>
+                                </Link>
+
+                            </li>
+                        </>
+                    </ul>
+                
+                
+                    <ul className="cards__itemss">
+
+                        <>
+                            <li className="cards__items">
+
+                                <Link className="cards__item__links" >
+                                    <figure className="cards__item__pic-wraps"
+
+                                    >
+                                        <img src={returnal}
+                                            alt="Mario"
+                                            className="cards__item__img"
+                                            images={returnal}
+                                        />
+                                    </figure>
+                                    <div className="cards__item__info">
+                                        <ul className="logo" i className="fab fa-xbox">
+                                            <li className="logo" i className="fab fa-playstation"></li>
+                                            <li className="logo" i className="fab fa-windows"></li>
+
+                                        </ul>
+                                        <h5 className="cards__item__text">Returnal</h5>
+                                        <h6 className="cards__item__text"></h6>
+
+                                        {/* {JSON.stringify(games)} */}
+                                        <h6 className="cards__item__text">
+                                           
+                                        </h6>
+                                        <h6 className="cards__item__text">
+                                            <i className="fas fa-plus"></i>
+                                        </h6>
+
+                                    </div>
+                                </Link>
+
+                            </li>
+                        </>
+                    </ul>
+               
+                
+                    <ul className="cards__itemss">
+
+                        <>
+                            <li className="cards__items">
+
+                                <Link className="cards__item__links" >
+                                    <figure className="cards__item__pic-wraps"
+
+                                    >
+                                        <img src={balance}
+                                            alt="Mario"
+                                            className="cards__item__img"
+                                            images={balance}
+                                        />
+                                    </figure>
+                                    <div className="cards__item__info">
+                                        <ul className="logo" i className="fab fa-xbox">
+                                            <li className="logo" i className="fab fa-playstation"></li>
+                                            <li className="logo" i className="fab fa-windows"></li>
+
+                                        </ul>
+                                        <h5 className="cards__item__text">Balan Wonderworld</h5>
+                                        <h6 className="cards__item__text"></h6>
+
+                                        {/* {JSON.stringify(games)} */}
+                                        <h6 className="cards__item__text">
+                  
+                                        </h6>
+                                        <h6 className="cards__item__text">
+                                            <i className="fas fa-plus"></i>
+                                        </h6>
+
+                                    </div>
+                                </Link>
+
+                            </li>
+                        </>
+                    </ul>
                 </div>
             </div>
+
         </div>
 
     )
 }
+
+
+
+
+
+
+
+
+
+export default UpcomingVideoGames
