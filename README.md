@@ -1,13 +1,13 @@
 # ProGamer
 
 ## Description
-This React-based application is intended to help gamers find their favorite games, save their favorite games, and discover new and exciting games.
+This React-based application is intended to help gamers find their favorite games, save their favorite games, and discover new and exciting games. 
 
 ## Table of Contents
 
 * [Features](#Features)
 * [Links](#Links)
-* [Demo](#Demo)
+* [Application-Preview](#Application-Preview)
 * [Languages](#Languages)
 * [Development-Notes](#Development-Notes)
 * [Reference](#Reference)
@@ -27,10 +27,10 @@ Main Features:
 
 ## Links
 
-* Project Repo: [Repoistory](https://github.com/chidibangzz/Project_3)
+* Project Repo: [Repository](https://github.com/chidibangzz/Project_3)
 * Deployed Heroku Application: [Website](https://project-3-react.herokuapp.com/)
 
-## Demo
+## Application-Preview
 
 ![ProGamer Home Page](https://github.com/chidibangzz/Project_3/blob/master/ProGamer%20Demo.PNG)
 
