@@ -3,7 +3,7 @@ import './UpcomingCard.css'
 import godOf from "/Users/chidibangzz/Project_3/client/src/images/godofwar.jpeg";
 import returnal from "/Users/chidibangzz/Project_3/client/src/images/returnal.jpeg";
 import balance from "/Users/chidibangzz/Project_3/client/src/images/balanwonderland.jpeg"
-import { Link } from 'react-router-dom'
+import { div } from 'react-router-dom'
 
 
 function UpcomingVideoGames() {
@@ -24,7 +24,7 @@ function UpcomingVideoGames() {
                         <>
                             <li className="cards__items">
 
-                                <Link className="cards__item__links" >
+                                <div className="cards__item__links" >
                                     <figure className="cards__item__pic-wraps"
 
                                     >
@@ -52,7 +52,7 @@ function UpcomingVideoGames() {
                                         </h6>
 
                                     </div>
-                                </Link>
+                                </div>
 
                             </li>
                         </>
@@ -64,7 +64,7 @@ function UpcomingVideoGames() {
                         <>
                             <li className="cards__items">
 
-                                <Link className="cards__item__links" >
+                                <div className="cards__item__links" >
                                     <figure className="cards__item__pic-wraps"
 
                                     >
@@ -92,7 +92,7 @@ function UpcomingVideoGames() {
                                         </h6>
 
                                     </div>
-                                </Link>
+                                </div>
 
                             </li>
                         </>
@@ -104,7 +104,7 @@ function UpcomingVideoGames() {
                         <>
                             <li className="cards__items">
 
-                                <Link className="cards__item__links" >
+                                <div className="cards__item__links" >
                                     <figure className="cards__item__pic-wraps"
 
                                     >
@@ -132,7 +132,7 @@ function UpcomingVideoGames() {
                                         </h6>
 
                                     </div>
-                                </Link>
+                                </div>
 
                             </li>
                         </>
