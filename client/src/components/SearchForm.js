@@ -1,15 +1,12 @@
 import React, { useState, useContext } from "react";
-import CardItem from "./CardItem";
 import SearchContext from "../utils/SearchContext";
-//import { useHistory } from "react-router-dom";
 import './SearchForm.css';
-//import './pages/Products';
 import './CardItem';
 
 const SearchForm = (props) => {
 
   const [searchTerm, setSearchTerm] = useState("")
-  const { gameResults, setGameResults } = useContext(SearchContext);
+  const { favoriteGames, setUniqueGames } = useContext(SearchContext);
 
   const handleChange = (e) => {
     setSearchTerm(e.target.value)
@@ -19,11 +16,22 @@ const SearchForm = (props) => {
     e.preventDefault();
     let slug = searchTerm.split(' ').join('-').toLowerCase()
 
-    setGameResults([]);
     fetch(`https://rawg.io/api/games?search=${slug}`)
       .then(resp => resp.json())
       .then(({ results }) => {
-        results === undefined ? alert('no games found') : setGameResults(results)
+        if (results === undefined) {
+          return alert('no games found');
+        }
+
+        const filteredSearchGames = results.filter(function (game) {
+          var index = favoriteGames.findIndex(x => x.id == game.id);
+          if (index <= -1) {
+            return game;
+          }
+        });
+
+        console.log("search filter", filteredSearchGames)
+        setUniqueGames(filteredSearchGames, {});
       })
     setSearchTerm("")
   }
