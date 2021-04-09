@@ -9,19 +9,19 @@ function CardItem(props) {
 
   // const rows = [...Array( Math.ceil(props.displayGames.length / 4) )];
   // const productRows = rows.map( (row, idx) => props.displayGames.slice(idx * 4, idx * 4 + 4) );
-  const { allGames, setUniqueGames } = useContext(SearchContext);
+  const { setUniqueGames } = useContext(SearchContext);
 
   function addToWishList(gameUserClickOn) {
     API.addGameToWishList(gameUserClickOn)
       .then(results => {
-        setUniqueGames(allGames, gameUserClickOn);
+        setUniqueGames(props.displayGames, gameUserClickOn);
       });
   }
 
   return (
     <>
       <li className="cards__item row">
-        {allGames.map((game, index) => {
+        {props.displayGames.map((game, index) => {
           {return !game.isFavorite && <div className="cards__item__link col-md-4 col-sm-12 mt-3 p-4" key={game.id}>
               <figure className="cards__item__pic-wrap" data-category={game.label}>
                 <img src={game.background_image}
