@@ -1,8 +1,8 @@
 import React from "react"
 import './UpcomingCard.css'
-import godOf from "/Users/chidibangzz/Project_3/client/src/images/godofwar.jpeg";
-import returnal from "/Users/chidibangzz/Project_3/client/src/images/returnal.jpeg";
-import balance from "/Users/chidibangzz/Project_3/client/src/images/balanwonderland.jpeg"
+import godOf from "../images/godofwar.jpeg";
+import returnal from "../images/returnal.jpeg";
+import balance from "../images/balanwonderland.jpeg"
 import { Link } from 'react-router-dom'
 
 
