@@ -38,7 +38,7 @@ h1 {
 
 .cards__items {
   margin-bottom: 24px;
-  
+  list-style-type: none;
   border-style: 2px line;
   
 }
