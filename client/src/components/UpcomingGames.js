@@ -1,9 +1,9 @@
 import React from "react"
 import './UpcomingCard.css'
-import godOf from "../images/godofwar.jpeg";
-import returnal from "../images/returnal.jpeg";
-import balance from "../images/balanwonderland.jpeg"
-
+import godOf from "/Users/chidibangzz/Project_3/client/src/images/godofwar.jpeg";
+import returnal from "/Users/chidibangzz/Project_3/client/src/images/returnal.jpeg";
+import balance from "/Users/chidibangzz/Project_3/client/src/images/balanwonderland.jpeg"
+import { Link } from 'react-router-dom'
 
 
 function UpcomingVideoGames() {
@@ -18,13 +18,13 @@ function UpcomingVideoGames() {
 
             <h1>Upcoming Releases!</h1>
             <div className="cards__containers">
-                <div className="cards__wrappers" >
-                    <ul className="cards__items">
+                <div className="cards__wrappers " >
+                    <ul className="cards__itemss">
 
                         <>
                             <li className="cards__items">
 
-                                <div className="cards__item__links" >
+                                <Link className="cards__item__links" >
                                     <figure className="cards__item__pic-wraps"
 
                                     >
@@ -35,9 +35,9 @@ function UpcomingVideoGames() {
                                         />
                                     </figure>
                                     <div className="cards__item__info">
-                                        <ul className="logo" className="fab fa-xbox">
-                                            <li className="logo" className="fab fa-playstation"></li>
-                                            <li className="logo" className="fab fa-windows"></li>
+                                        <ul className="logo" i className="fab fa-xbox">
+                                            <li className="logo" i className="fab fa-playstation"></li>
+                                            <li className="logo" i className="fab fa-windows"></li>
 
                                         </ul>
                                         <h5 className="cards__item__text"></h5>
@@ -52,19 +52,19 @@ function UpcomingVideoGames() {
                                         </h6>
 
                                     </div>
-                                </div>
+                                </Link>
 
                             </li>
                         </>
                     </ul>
                 
                 
-                    <ul className="cards__items">
+                    <ul className="cards__itemss">
 
                         <>
                             <li className="cards__items">
 
-                                <div className="cards__item__links" >
+                                <Link className="cards__item__links" >
                                     <figure className="cards__item__pic-wraps"
 
                                     >
@@ -75,9 +75,9 @@ function UpcomingVideoGames() {
                                         />
                                     </figure>
                                     <div className="cards__item__info">
-                                        <ul className="logo" className="fab fa-xbox">
-                                            <li className="logo" className="fab fa-playstation"></li>
-                                            <li className="logo" className="fab fa-windows"></li>
+                                        <ul className="logo" i className="fab fa-xbox">
+                                            <li className="logo" i className="fab fa-playstation"></li>
+                                            <li className="logo" i className="fab fa-windows"></li>
 
                                         </ul>
                                         <h5 className="cards__item__text">Returnal</h5>
@@ -92,7 +92,7 @@ function UpcomingVideoGames() {
                                         </h6>
 
                                     </div>
-                                </div>
+                                </Link>
 
                             </li>
                         </>
@@ -104,7 +104,7 @@ function UpcomingVideoGames() {
                         <>
                             <li className="cards__items">
 
-                                <div className="cards__item__links" >
+                                <Link className="cards__item__links" >
                                     <figure className="cards__item__pic-wraps"
 
                                     >
@@ -115,9 +115,9 @@ function UpcomingVideoGames() {
                                         />
                                     </figure>
                                     <div className="cards__item__info">
-                                        <ul className="logo" className="fab fa-xbox">
-                                            <li className="logo" className="fab fa-playstation"></li>
-                                            <li className="logo" className="fab fa-windows"></li>
+                                        <ul className="logo" i className="fab fa-xbox">
+                                            <li className="logo" i className="fab fa-playstation"></li>
+                                            <li className="logo" i className="fab fa-windows"></li>
 
                                         </ul>
                                         <h5 className="cards__item__text">Balan Wonderworld</h5>
@@ -132,7 +132,7 @@ function UpcomingVideoGames() {
                                         </h6>
 
                                     </div>
-                                </div>
+                                </Link>
 
                             </li>
                         </>
