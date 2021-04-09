@@ -2,53 +2,57 @@ import { Link } from 'react-router-dom'
 import React from 'react'
 import './CardItem.css'
 import './SearchForm'
+import API from '../utils/API';
 
 function CardItem(props) {
 
-    // const rows = [...Array( Math.ceil(props.displayGames.length / 4) )];
-    // const productRows = rows.map( (row, idx) => props.displayGames.slice(idx * 4, idx * 4 + 4) );
+  // const rows = [...Array( Math.ceil(props.displayGames.length / 4) )];
+  // const productRows = rows.map( (row, idx) => props.displayGames.slice(idx * 4, idx * 4 + 4) );
 
+  function addToWishList(allGames, gameUserClickOn) {
+    API.addGameToWishList(gameUserClickOn)
+      .then(results => {
+        props.getUniqueGames(allGames, gameUserClickOn);
+      });
+  }
 
-    return (
-        <>
-            <li className="cards__item row">
-                {props.displayGames.map(games => (
-                    // !props.favoriteGames.find(element => element.apiGameId == games.id) ?
-                        <Link className="cards__item__link col-md-4 col-sm-12 mt-3 p-4" to={games.path} key={games.id}>
-                        <figure className="cards__item__pic-wrap" data-category
-                            ={games.label}
-                        >   
-                            <img src={games.background_image}
-                                alt=""
-                                className="cards__item__img"
-                                images={games.background_image}
-                            />
-                        </figure>
-                        <div className="cards__item__info">
-                            <ul className="logo" i className="fab fa-xbox">{games.logo}
-                                <li className="logo" i className="fab fa-playstation"></li>
-                                <li className="logo" i className="fab fa-windows"></li>
+  return (
+    <>
+      <li className="cards__item row">
+        {props.displayGames.map((game, index) => (
+          <div className="cards__item__link col-md-4 col-sm-12 mt-3 p-4" key={game.id}>
+            <figure className="cards__item__pic-wrap" data-category={game.label}>
+              <img src={game.background_image}
+                alt=""
+                className="cards__item__img"
+                images={game.background_image}
+              />
+            </figure>
+            <div className="cards__item__info">
+              {/* <Linak to={game.path} > */}
+              <ul className="logo" className="fab fa-xbox">{game.logo}
+                <li className="logo" className="fab fa-playstation"></li>
+                <li className="logo" className="fab fa-windows"></li>
 
-                            </ul>
-                            <h5 className="cards__item__text">{games.name}</h5>
-                            <h6 className="cards__item__text">{games.released}</h6>
+              </ul>
+              <h5 className="cards__item__text">{game.name}</h5>
+              <h6 className="cards__item__text">{game.released}</h6>
 
-                            {/* {JSON.stringify(games)} */}
-                            <h6 className="cards__item__text">{games.releaseDate}
-                                <i className="fas fa-star">{games.rating}</i>
-                            </h6>
-                            <h6 className="cards__item__text">{games.ratingNumber}
-                                <i className="fas fa-plus"></i>
-                            </h6>
+              {/* {JSON.stringify(games)} */}
+              <h6 className="cards__item__text">{game.releaseDate}
+                <i className="fas fa-star">{game.rating}</i>
+              </h6>
+              <h6 className="cards__item__text">{game.ratingNumber}
+                {!game.isFavorite && <i className="fas fa-plus" onClick={() => addToWishList(props.displayGames, game)}> Add to Wishlist </i>}
+              </h6>
+              {/* </Link> */}
+            </div>
+          </div>
+        ))}
 
-                        </div>
-                    </Link>
-                    // : ""
-                ))}
-
-            </li>
-        </>
-    )
+      </li>
+    </>
+  )
 
 }
 

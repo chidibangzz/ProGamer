@@ -27,7 +27,7 @@ export default {
   getFavoriteGames: function() {
     return axios.get("/api/videoGames")
   },
-  addVideoGame: function(addGame) {
+  addGameToWishList: function(addGame) {
     return axios.post("/api/videoGames",addGame)
   },
 };

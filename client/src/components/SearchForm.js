@@ -1,37 +1,38 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import CardItem from "./CardItem";
+import SearchContext from "../utils/SearchContext";
 //import { useHistory } from "react-router-dom";
 import './SearchForm.css';
 //import './pages/Products';
 import './CardItem';
 
-const SearchForm = () => {
+const SearchForm = (props) => {
 
   const [searchTerm, setSearchTerm] = useState("")
-  const [gameResults, setGameResults] = useState([])
+  const { gameResults, setGameResults } = useContext(SearchContext);
 
   const handleChange = (e) => {
     setSearchTerm(e.target.value)
   }
 
   const onSubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     let slug = searchTerm.split(' ').join('-').toLowerCase()
 
-    setGameResults([])
+    setGameResults([]);
     fetch(`https://rawg.io/api/games?search=${slug}`)
-    .then(resp => resp.json())
-    .then(({results}) => {
-      results === undefined ? alert('no games found') : setGameResults(results)
-    })
+      .then(resp => resp.json())
+      .then(({ results }) => {
+        results === undefined ? alert('no games found') : setGameResults(results)
+      })
     setSearchTerm("")
   }
 
   return (
-    <form onSubmit={onSubmit}>
+    <form>
       <div className="form-group">
         <label htmlFor="search"></label>
-        <input 
+        <input
           className="search"
           type="text"
           value={searchTerm}
@@ -41,11 +42,8 @@ const SearchForm = () => {
           id="search"
         />
         <br />
-        <button className="btn=" i className="fas fa-search" onSubmit={onSubmit}>
-    
-        </button>
+        <button className="btn=" className="fas fa-search" onClick={onSubmit}></button>
       </div>
-      <CardItem displayGames={gameResults} />
     </form>
   )
 }

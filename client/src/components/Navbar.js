@@ -13,7 +13,6 @@ function Navbar(props) {
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
 
-
     const showButton = () => {
         if (window.innerWidth <= 960) {
             setButton(false);
@@ -27,8 +26,8 @@ function Navbar(props) {
         showButton();
     }, []);
 
-    window.addEventListener('resize', showButton)
-//
+    window.addEventListener('resize', showButton);
+
     return (
         <>
             <nav className='extra-navbar'>Free shipping on games over 35 dollars!!!!</nav>
@@ -66,8 +65,7 @@ function Navbar(props) {
                         </li>
 
                     </ul>
-                    {button && <Button buttonStyle='btn--outline'>Home</
-                    Button>}
+                    {button && <Button buttonStyle='btn--outline'>Home</Button>}
                 </div>
             </nav>
         </>

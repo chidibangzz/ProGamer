@@ -18,8 +18,8 @@ function UpcomingVideoGames() {
 
             <h1>Upcoming Releases!</h1>
             <div className="cards__containers">
-                <div className="cards__wrappers " >
-                    <ul className="cards__itemss">
+                <div className="cards__wrappers" >
+                    <ul className="cards__items">
 
                         <>
                             <li className="cards__items">
@@ -35,9 +35,9 @@ function UpcomingVideoGames() {
                                         />
                                     </figure>
                                     <div className="cards__item__info">
-                                        <ul className="logo" i className="fab fa-xbox">
-                                            <li className="logo" i className="fab fa-playstation"></li>
-                                            <li className="logo" i className="fab fa-windows"></li>
+                                        <ul className="logo" className="fab fa-xbox">
+                                            <li className="logo" className="fab fa-playstation"></li>
+                                            <li className="logo" className="fab fa-windows"></li>
 
                                         </ul>
                                         <h5 className="cards__item__text"></h5>
@@ -59,7 +59,7 @@ function UpcomingVideoGames() {
                     </ul>
                 
                 
-                    <ul className="cards__itemss">
+                    <ul className="cards__items">
 
                         <>
                             <li className="cards__items">
@@ -75,9 +75,9 @@ function UpcomingVideoGames() {
                                         />
                                     </figure>
                                     <div className="cards__item__info">
-                                        <ul className="logo" i className="fab fa-xbox">
-                                            <li className="logo" i className="fab fa-playstation"></li>
-                                            <li className="logo" i className="fab fa-windows"></li>
+                                        <ul className="logo" className="fab fa-xbox">
+                                            <li className="logo" className="fab fa-playstation"></li>
+                                            <li className="logo" className="fab fa-windows"></li>
 
                                         </ul>
                                         <h5 className="cards__item__text">Returnal</h5>
@@ -115,9 +115,9 @@ function UpcomingVideoGames() {
                                         />
                                     </figure>
                                     <div className="cards__item__info">
-                                        <ul className="logo" i className="fab fa-xbox">
-                                            <li className="logo" i className="fab fa-playstation"></li>
-                                            <li className="logo" i className="fab fa-windows"></li>
+                                        <ul className="logo" className="fab fa-xbox">
+                                            <li className="logo" className="fab fa-playstation"></li>
+                                            <li className="logo" className="fab fa-windows"></li>
 
                                         </ul>
                                         <h5 className="cards__item__text">Balan Wonderworld</h5>
