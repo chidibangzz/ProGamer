@@ -39,6 +39,7 @@ Main Features:
 * Javascript
 * HTML
 * CSS
+* [Axios](https://www.npmjs.com/package/axios)
 * [Boostrap](https://getbootstrap.com/)
 * [DotENV](https://www.npmjs.com/package/dotenv)
 * [ESLint](https://eslint.org/)
