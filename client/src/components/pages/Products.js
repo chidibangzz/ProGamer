@@ -14,7 +14,7 @@ import axios from "axios";
 const BASEURL = `https://api.rawg.io/api/games?key=${process.env.REACT_APP_API_KEY}`;
 
 function Products() {
-  const {setFavoriteGames, setUniqueGames } = useContext(SearchContext);
+  const {allGames, setFavoriteGames, setUniqueGames } = useContext(SearchContext);
 
   useEffect(() => {
     loadVideogames();
@@ -46,7 +46,7 @@ function Products() {
       <div className="cards__container">
         <div className="cards__wrapper">
           <ul className="cards__items-container">
-            <CardItem />
+            <CardItem displayGames={allGames}/>
           </ul>
         </div>
       </div>
