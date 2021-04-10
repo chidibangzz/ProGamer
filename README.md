@@ -20,6 +20,7 @@ Main Features:
 
 * A fully functional home page that allows users to navigate to other parts of the website
 * Carousel feature displays new and exciting games on the home page
+* Allows users to search for any game from the product page
 * A product page that displays popular games 
 * Allows users to save games that interest them
 * Unique user login features that save favorite games based on the user's account
