@@ -8,7 +8,7 @@ This React-based application is intended to help gamers find their favorite game
 * [Features](#Features)
 * [Links](#Links)
 * [Application-Preview](#Application-Preview)
-* [Languages](#Languages)
+* [Technologies](#Technologies)
 * [Development-Notes](#Development-Notes)
 * [Reference](#Reference)
 * [Credits](#Credits)
@@ -34,15 +34,18 @@ Main Features:
 
 ![ProGamer Home Page](https://github.com/chidibangzz/Project_3/blob/master/ProGamer%20Demo.PNG)
 
-## Languages
+## Technologies
 
 * Javascript
 * HTML
 * CSS
-* [React](https://reactjs.org/)
+* [Boostrap](https://getbootstrap.com/)
+* [DotENV](https://www.npmjs.com/package/dotenv)
+* [ESLint](https://eslint.org/)
 * [Express](https://expressjs.com/)
 * [MongoDB](https://www.mongodb.com/)
 * [NodeJS](https://nodejs.dev/)
+* [React](https://reactjs.org/)
 
 ## Development-Notes
 
@@ -68,35 +71,44 @@ APIs Used:
 
 ## Contributors
 
-> Design Team
+> Design Team:
 * Chidi Ekeke
-   * 1
-   * 2
-   * 3
-   * 4
-   * 5
+   * Created the initial Github repository and the rough skeleton MVC file design 
+   * Designed the home page
+   * Designed the Purchase Games page
+   * Designed and created the card item rendering feature for the Purchase Games page
+   * Designed and created the home page carousel feature
+   * Deployed the application to Heroku
     
 * Reina Rivera
-   * 1
-   * 2
-   * 3
-   * 4
-   * 5
-    
-> Function Team
+   * Desinged the Upcoming Releases portion of the home page
+   * Aided in the design of the home page carousel 
+   * Assisted in general front-end styling efforts
+   * Created the group presentation powerpoint 
+   
+> Function Team:
 * Joe Park
-   * 1
-   * 2
-   * 3
-   * 4
-   * 5
+   * Created the initial search functionality with the API
+   * Created the backend routing for the models, controllers, and Node server 
+   * Created the Github repository readme
+   * Assisted in resolving merge conflict issues on the Github repository 
+   * Assisted in resolving Heroku deployment issues 
    
 * Ryland Quirk
-   * 1
-   * 2
-   * 3
-   * 4
-   * 5
+   * Created the sign-up functionality 
+   * Created the sign-up page
+   * Created the MongoDB server backend
+   * Assisted in the creation of the backend routes 
+
+> Instructors That Helped Us:
+* Sean Belverstone
+  * Helped us resolve the myriad of merge conflict issues some members of our team were experiencing  
+* Calvin Carter
+  * Helped us fix the search functionality, the favorites functionality, and amended the backend routes to properly route to the correct React compnents
+* Daniel Vega
+  * Helped us with merge conflict issues
+* Fernando Medina
+  * Helped us heavily with setting up the initial backend controllers, models, and API routes 
 
 ## License
 
