@@ -72,15 +72,15 @@ APIs Used:
 > Design Team:
 * Chidi Ekeke
    * Created the initial Github repository and the rough skeleton MVC file design 
-   * Designed the home page
-   * Designed the Purchase Games page
-   * Designed and created the card item rendering feature for the Purchase Games page
-   * Designed and created the home page carousel feature
+   * Designed the "Home" page
+   * Designed the "Purchase Games" page
+   * Designed and created the card item rendering feature for the "Purchase Games" page
+   * Designed and created the "Home" page carousel feature
    * Deployed the application to Heroku
     
 * Reina Rivera
-   * Desinged the Upcoming Releases portion of the home page
-   * Aided in the design of the home page carousel 
+   * Desinged the "Upcoming Releases" portion of the home page
+   * Aided in the design of the "Home" page carousel 
    * Assisted in general front-end styling efforts
    * Created the group presentation powerpoint 
    
@@ -94,7 +94,7 @@ APIs Used:
    
 * Ryland Quirk
    * Created the sign-up functionality 
-   * Created the sign-up page
+   * Created the "Sign-Up" page
    * Created the MongoDB server backend
    * Assisted in the creation of the backend routes 
 
@@ -103,10 +103,11 @@ APIs Used:
   * Helped us resolve the myriad of merge conflict issues some members of our team were experiencing  
 * Calvin Carter
   * Helped us fix the search functionality, the favorites functionality, and amended the backend routes to properly route to the correct React compnents
-* Daniel Vega
-  * Helped us with merge conflict issues
 * Fernando Medina
   * Helped us heavily with setting up the initial backend controllers, models, and API routes 
+* Daniel Vega
+  * Helped us with merge conflict issues
+
 
 ## License
 
