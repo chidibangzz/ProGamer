@@ -94,6 +94,7 @@ APIs Used:
    * Assisted in resolving Heroku deployment issues 
    
 * Ryland Quirk
+   * Took on project management responsibilities  
    * Created the sign-up functionality 
    * Created the "Sign-Up" page
    * Created the MongoDB server backend
