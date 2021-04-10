@@ -1,7 +1,7 @@
 # ProGamer
 
 ## Description
-This React-based application is intended to help gamers find their favorite games, save their favorite games, and discover new and exciting games. 
+This React-based application is intended to help gamers find their favorite games, save their favorite games, and discover new and exciting games. This React-based application employs a MongoDB database with Node.js on the backend. Additionally, DotENV was utilized to hide the API keys and ESLint was employed for syntactical consistency across the entire code base. The MVC paradigm is employed for the overall structuring of this application.  
 
 ## Table of Contents
 
@@ -9,7 +9,6 @@ This React-based application is intended to help gamers find their favorite game
 * [Links](#Links)
 * [Application-Preview](#Application-Preview)
 * [Technologies](#Technologies)
-* [Development-Notes](#Development-Notes)
 * [Reference](#Reference)
 * [Credits](#Credits)
 * [Contributors](#Contributors)
@@ -46,8 +45,6 @@ Main Features:
 * [MongoDB](https://www.mongodb.com/)
 * [NodeJS](https://nodejs.dev/)
 * [React](https://reactjs.org/)
-
-## Development-Notes
 
 ## References
 
