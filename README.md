@@ -1,15 +1,14 @@
 # ProGamer
 
 ## Description
-This React-based application is intended to help gamers find their favorite games, save their favorite games, and discover new and exciting games. 
+This React-based application is intended to help gamers find their favorite games, save their favorite games, and discover new and exciting games. This React-based application employs a MongoDB database with Node.js on the backend. Additionally, DotENV was utilized to hide the API keys and ESLint was employed for syntactical consistency across the entire code base. The MVC paradigm is employed for the overall structuring of this application.  
 
 ## Table of Contents
 
 * [Features](#Features)
 * [Links](#Links)
 * [Application-Preview](#Application-Preview)
-* [Languages](#Languages)
-* [Development-Notes](#Development-Notes)
+* [Technologies](#Technologies)
 * [Reference](#Reference)
 * [Credits](#Credits)
 * [Contributors](#Contributors)
@@ -21,6 +20,7 @@ Main Features:
 
 * A fully functional home page that allows users to navigate to other parts of the website
 * Carousel feature displays new and exciting games on the home page
+* Allows users to search for any game from the product page
 * A product page that displays popular games 
 * Allows users to save games that interest them
 * Unique user login features that save favorite games based on the user's account
@@ -34,17 +34,19 @@ Main Features:
 
 ![ProGamer Home Page](https://github.com/chidibangzz/Project_3/blob/master/ProGamer%20Demo.PNG)
 
-## Languages
+## Technologies
 
 * Javascript
 * HTML
 * CSS
-* [React](https://reactjs.org/)
+* [Axios](https://www.npmjs.com/package/axios)
+* [Boostrap](https://getbootstrap.com/)
+* [DotENV](https://www.npmjs.com/package/dotenv)
+* [ESLint](https://eslint.org/)
 * [Express](https://expressjs.com/)
 * [MongoDB](https://www.mongodb.com/)
 * [NodeJS](https://nodejs.dev/)
-
-## Development-Notes
+* [React](https://reactjs.org/)
 
 ## References
 
@@ -68,35 +70,46 @@ APIs Used:
 
 ## Contributors
 
-> Design Team
+> Design Team:
 * Chidi Ekeke
-   * 1
-   * 2
-   * 3
-   * 4
-   * 5
+   * Created the initial Github repository and the rough skeleton MVC file design 
+   * Designed the "Home" page
+   * Designed the "Purchase Games" page
+   * Designed and created the card item rendering feature for the "Purchase Games" page
+   * Designed and created the "Home" page carousel feature
+   * Deployed the application to Heroku
     
 * Reina Rivera
-   * 1
-   * 2
-   * 3
-   * 4
-   * 5
-    
-> Function Team
+   * Desinged the "Upcoming Releases" portion of the home page
+   * Aided in the design of the "Home" page carousel 
+   * Assisted in general front-end styling efforts
+   * Created the group presentation powerpoint 
+   
+> Function Team:
 * Joe Park
-   * 1
-   * 2
-   * 3
-   * 4
-   * 5
+   * Created the initial search functionality with the API
+   * Created the backend routing for the models, controllers, and Node server 
+   * Created the Github repository readme
+   * Assisted in resolving merge conflict issues on the Github repository 
+   * Assisted in resolving Heroku deployment issues 
    
 * Ryland Quirk
-   * 1
-   * 2
-   * 3
-   * 4
-   * 5
+   * Took on project management responsibilities  
+   * Created the sign-up functionality 
+   * Created the "Sign-Up" page
+   * Created the MongoDB server backend
+   * Assisted in the creation of the backend routes 
+
+> Instructors That Helped Us:
+* Sean Belverstone
+  * Helped us resolve the myriad of merge conflict issues some members of our team were experiencing  
+* Calvin Carter
+  * Helped us fix the search functionality, the favorites functionality, and amended the backend routes to properly route to the correct React compnents
+* Fernando Medina
+  * Helped us heavily with setting up the initial backend controllers, models, and API routes 
+* Daniel Vega
+  * Helped us with merge conflict issues
+
 
 ## License
 
