@@ -30,12 +30,13 @@ export default function Services() {
     return <>
         <div className='cards'>
             <h1> Wishlist!</h1>
-            <div className="cards__container">
-                <div className="cards__wrapper">
-                    <ul className="cards__items-container">
+            <div className="cards__containers">
+                <div className="cards__wrappers">
+                    <ul className="cards__itemss">
+                        
                         {/* <CardItem displayGames={favoriteGames} /> */}
                         {/* ^^^^ the following seems to not show on page. I believe its due to CSS issue. Quickfix is just include your html here */}
-                        <li className="cards__item row">
+                        <li className="cards__items">
                         {favoriteGames.map(game =>
                             <div className="cards__item__link col-md-4 col-sm-12 mt-3 p-4" key={game.id}>
                             <figure className="cards__item__pic-wrap" data-category={game.label}>
