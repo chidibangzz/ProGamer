@@ -6,7 +6,7 @@ import API from '../utils/API';
 import SearchContext from '../utils/SearchContext';
 
 function CardItem(props) {
-
+  //deleted wishlist
   // const rows = [...Array( Math.ceil(props.displayGames.length / 4) )];
   // const productRows = rows.map( (row, idx) => props.displayGames.slice(idx * 4, idx * 4 + 4) );
   const { allGames, setUniqueGames } = useContext(SearchContext);
